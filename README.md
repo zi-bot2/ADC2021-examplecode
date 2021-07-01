@@ -1,7 +1,7 @@
 # ADC2021
 
 ### Example of NN training and evaluation process
-- two examples of model architecture
+ **Two examples of model architecture**
 
 1. Load background dataset
 2. Define model architecture
