@@ -1,6 +1,10 @@
-# ADC2021
+# ADC2021: Unsupervised New Physics detection at 40 MHz
+
+This repository contains code examples for analysing the [Anomaly Detection
+Data Challenge](https://mpp-hep.github.io/ADC2021/) datasets.
 
 In this repository you will find code examples for the following:
+
 1. How to load background dataset
 2. Examples of define model architectures for anomaly detection
 3. How to train the model
