@@ -17,7 +17,8 @@ This information can be found in three different scripts:
 
 1. **Convolutional_AE.ipynb**: Load the data, define a convolutional autoencoder and evaluate it's performance
 2. **Dense_AE.ipynb.ipynb**: Load the data, define a fully connected dense autoencoder and evaluate it's performance
-3. **computeFLOPs.ipynb**: Compute the number of floating point operations for a given model
+3. **graph_vae.ipynb**: Define a graph autoencoder or graph variational autoencoder
+4. **computeFLOPs.ipynb**: Compute the number of floating point operations for a given model
 
 
 
