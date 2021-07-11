@@ -4,7 +4,7 @@ import math
 import h5py
 import tensorflow as tf
 
-def load_model(model_name, custom_objects={'QDense': QDense, 'QActivation': QActivation}):
+def load_model(model_name, custom_objects=None):
     name = model_name + '.json'
     json_file = open(name, 'r')
     loaded_model_json = json_file.read()
