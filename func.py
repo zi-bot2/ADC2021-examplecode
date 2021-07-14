@@ -4,6 +4,20 @@ import math
 import h5py
 import tensorflow as tf
 
+def load_model(model_name, custom_objects=None):
+    name = model_name + '.json'
+    json_file = open(name, 'r')
+    loaded_model_json = json_file.read()
+    json_file.close()
+    model = model_from_json(loaded_model_json, custom_objects=custom_objects)
+    model.load_weights(model_name + '.h5')
+    return model
+
+def save_model(model_save_name, model):
+    with open(model_save_name + '.json', 'w') as json_file:
+        json_file.write(model.to_json())
+    model.save_weights(model_save_name + '.h5')
+
 def find_min_max_range(true, pred):
     minRange = min(true)
     minPred = min(pred)
